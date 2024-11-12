@@ -1,0 +1,39 @@
+{
+    "env": {
+        "myIncludePath": [
+            "${workspaceFolder}\\include",
+            "${workspaceFolder}\\src",
+            "C:/msys64/ucrt64/include/**"
+        ],
+        "myDefines": [
+            "DEBUG",
+            "MY_FEATURE=1"
+        ]
+    },
+    "configurations": [
+        {
+            "name": "Win32",
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "browse": {
+                "path": [
+                    "${myIncludePath}",
+                    "${workspaceFolder}"
+                ]
+            },
+            "compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "includePath": [
+                "${default}",
+                "C:/msys64/ucrt64/include/**",
+                "C:/msys64/ucrt64/lib/**"
+            ]
+        }
+    ],
+    "version": 4
+}
