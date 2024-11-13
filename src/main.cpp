@@ -3,7 +3,6 @@
 
 int main(int argc, char** argv) {
 
-    std::cout << "Begin" << std::endl;
     auto app = Gtk::Application::create(argc, argv);
 
     Gtk::Window window;
