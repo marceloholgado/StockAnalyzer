@@ -31,7 +31,8 @@
             "includePath": [
                 "${default}",
                 "C:/msys64/ucrt64/include/**",
-                "C:/msys64/ucrt64/lib/**"
+                "C:/msys64/ucrt64/lib/**",
+                "${workspaceFolder}/include"
             ]
         }
     ],
