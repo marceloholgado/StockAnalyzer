@@ -1,4 +1,4 @@
-#include "stockhistory.hpp"
+#include "..\include\stockhistory.hpp"
 
 StockHistory::StockHistory(){};
 

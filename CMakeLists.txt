@@ -24,6 +24,9 @@ include_directories(${GTKMM_INCLUDE_DIRS})
 # Add the source files for the project
 add_executable(${PROJECT_NAME} 
     src/main.cpp
+    src/gdatastocksmarket.cpp
+    src/stock.cpp
+    src/stockhistory.cpp
 )
 
 # Link the GTKmm libraries

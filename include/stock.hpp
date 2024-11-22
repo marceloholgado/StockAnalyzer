@@ -246,4 +246,5 @@ public:
     void setHistory(StockHistory h);
     bool isIsActive();
     void setIsActive(bool isActive);
+    std::string toString();
 };

@@ -1,4 +1,6 @@
-#include "stock.hpp"
+#include "..\include\stock.hpp"
+#include <iostream>
+#include <sstream>
 
 Stock::Stock() { }
 
@@ -246,4 +248,45 @@ bool Stock::isIsActive()
 void Stock::setIsActive(bool isActive)
 {
     isActive = isActive;
+}
+
+std::string Stock::toString() {
+    std::ostringstream oss;
+
+    oss << "=== Stock Details ===\n";
+    oss << "Registry Type: " << registryType << "\n";
+    oss << "Active: " << (isActive ? "Yes" : "No") << "\n";
+    oss << "Currency: " << currency << "\n";
+
+    oss << "\n=== Stock Information ===\n";
+    oss << "Symbol: " << symbol << "\n";
+    oss << "Company Name: " << companyName << "\n";
+    oss << "Marked: " << marked << "\n";
+
+    oss << "\n=== Price Data ===\n";
+    oss << "Current Price: " << currentPrice << "\n";
+    oss << "Open Price: " << openPrice << "\n";
+    oss << "Close Price: " << closePrice << "\n";
+    oss << "High Price Today: " << hightPriceToday << "\n";
+    oss << "Low Price: " << lowPrice << "\n";
+    oss << "52-Week High: " << fiftyTowWeekHight << "\n";
+    oss << "52-Week Low: " << fiftyTowWeekLow << "\n";
+
+    oss << "\n=== Volume and Capitalization Data ===\n";
+    oss << "Volume: " << volume << "\n";
+    oss << "Average Volume: " << averageVolume << "\n";
+    oss << "Market Cap: " << marketCap << "\n";
+    oss << "Shares Outstanding: " << sharesOutstanding << "\n";
+
+    oss << "\n=== Financial Indicators ===\n";
+    oss << "P/E Ratio: " << priceToEarningsRatio << "\n";
+    oss << "Earnings Per Share: " << earningsPerShare << "\n";
+    oss << "Dividend Yield: " << dividendYield << "\n";
+    oss << "Beta: " << beta << "\n";
+
+    oss << "\n=== Important Dates ===\n";
+    oss << "Earnings Date: " << earningsDate << "\n";
+    oss << "Dividend Date: " << dividendDate << "\n";
+
+    return oss.str();
 }
